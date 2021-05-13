@@ -1,0 +1,57 @@
+# dataframes and matrix
+v=c(45,66,73,88,98)
+v
+as.data.frame(v)
+v=as.data.frame(v)
+v
+str(g)
+str(v)
+class(v)
+typeof(v)
+# now change rownames and colnames
+rownames(v)
+colnames(v)
+rownames(v)=c("aparna","ravneet","tanya","lovepreet","alrt")
+v
+colnames(v)
+colnames(v)="T"
+v
+colnames(v)="phone digit"
+v
+# using dollar sign for binding
+colnames(v)="P D"
+v
+v$`P D`^5
+v$`P D`*3
+v$`P D`/7
+sqrt(v$`P D`)
+sum(v$`P D`)
+# using dollar sign to create new columns
+v$u=c(55,45.7,77,76,99)
+u
+v$l=c(55,76,56,44,54)
+l
+v$q=c(65,88,45,55,87.6)
+q
+v$I=v$l+v$q
+I
+# now using cbind
+v
+W=c(45,99,65,77,45.9)
+W
+cbind(W,v)# new column created
+t(v)# data transversed
+nrow(v)
+ncol(v)
+dim(v)
+v
+rowMeans(v)
+colMeans(v)
+rowSums(v)
+colSums(v)
+summary(v)
+#matrix
+mean(as.matrix(v))
+str(v)
+str(as.matrix(v))
+    
