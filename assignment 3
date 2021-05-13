@@ -1,0 +1,54 @@
+# lineplots and graphs
+f=c(88,66,75,45,99.7)
+f
+as.data.frame(f)
+f=as.data.frame(f)
+f
+rownames(f)= c("sushma","kanika","monali","tanisha","tiger")
+f
+colnames(f)="contribution"
+f
+f$T=c(56,88,54,34,88.9)
+T
+f
+f$R=c(76.77,56,87,66,45)
+R
+# now creating linesplots and graphs
+plot(3:7)
+plot(11.7:8)
+plot(f$contribution)
+plot(f$T,type ="b")
+plot(f$R,type="l")
+plot(f$contribution,f$T)
+plot(f$contribution,f$T,pch=14)
+plot(f$R,f$T,pch=43)
+# add colour to points on graph
+points(f$contribution,f$T,col="yellow",pch="14")
+# add a text in the plot
+mtext("T vs R in yellow")
+# barplots
+barplot(f$T)
+barplot(f$T,names.arg =rownames(f))
+barplot(f$T,names.arg =rownames(f), horiz = TRUE,las=2,f$T, xlab="elapsed time(s)", main ="time taken" )
+barplot(f$T,col = "purple")
+# to find rnorms
+rnorm(200,mean=45,sd=6)
+n=rnorm(200,mean=45,sd=6)
+n
+# to create histogram
+hist(n)
+p=rnorm(376,mean=88,sd=45)
+p
+# to look for boxplot/comparison
+boxplot(p)
+boxplot(f)
+boxplot(n,p)
+boxplot(n,p,names = c("a","l"), ylab="contri",main="names")
+# to create pdf of charts/plots on the system and also start collecting data
+pdf("barplot.pdf")
+hist(n)
+hist(p)
+boxplot(n,p)
+boxplot(p)
+dev.off()
+
