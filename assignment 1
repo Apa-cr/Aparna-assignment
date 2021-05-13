@@ -1,0 +1,79 @@
+# assignment for bioinformatics
+# basic arithmatics functions
+#addition
+4+7
+34+5
+12345+678910
+# subtraction
+3-6
+34-12
+# multiplication
+345*54
+123*876
+# division
+34/65
+654/66
+# square root
+sqrt(76)
+sqrt(144)
+#exponential
+45^5
+34^7
+# mean,mode,median
+mean(c(43,66,45))
+median(c(67,65,55))
+mode(c(54,765,897))
+# to store the values in a variable
+s=(c(65,88,54,67))
+s
+mean(s)
+median(s)
+mode(s)
+# to find the characteristics of a variable used
+str(s)
+class(s)
+typeof(s)
+# strings formation
+b=(c(45,76,678,55))
+b
+b="G" #here g can be anything like virus name, pateint name
+# converting integers into numbers
+u=(c(45.04,77.87,56.8,88.65))
+u
+as.integer(u)
+round(u)
+str(u)
+class(u)
+typeof(u)# means having  both numerical and integer value
+str(as.integer(u))
+str(round(u))
+w=5:47
+w
+w[4:6]
+w[16]
+str(w)
+# get to sum commands
+o=(c("12","65","76","54"))
+o
+sum(o)# sum error showing because the above no. are saved as characters
+as.numeric(o)
+sum(as.numeric(o))
+is.character(o)
+is.numeric(o)
+is.vector(o)
+is.list(o)
+is.data.frame(o)
+o=as.list(o)
+o
+is.list(o)
+o=as.numeric(o)
+o
+is.numeric(o)
+o=as.character(o)
+o
+is.character(o)
+list(c(4,7,6),c(6,88,45),c(77,5,76))
+str(o)
+class(o)
+typeof(o)
+
